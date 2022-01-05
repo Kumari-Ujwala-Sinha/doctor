@@ -7,8 +7,8 @@ const patientCtrl = {
     createPatient:async(req, res) =>{
         try {
 
-          const  {name, age, message, phone, branch, clinic, doctor,slot, date} =req.body
-          const newPatient = new Patient({name, age, message, phone, branch, clinic, doctor,slot, date})
+          const  {name, age, message, phone, branch, clinic, doctor,slot, date,department} =req.body
+          const newPatient = new Patient({name, age, message, phone, branch, clinic, doctor,slot, date, department})
           await newPatient.save()
          res.json({msg:"patient successfully booked"})
  

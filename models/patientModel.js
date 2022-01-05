@@ -6,7 +6,7 @@ const patientSchema = new mongoose.Schema({
     name:{
         type: String,
         required: true,
-        trim: true,
+       
     },
     age:{
         type:Number
@@ -26,7 +26,10 @@ const patientSchema = new mongoose.Schema({
     doctor:{
         type:String
     },
-    stot:{
+    department:{
+        type:String
+    },
+    slot:{
         type:String
     },
     date:{
