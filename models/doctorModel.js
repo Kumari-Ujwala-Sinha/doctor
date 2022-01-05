@@ -2,7 +2,16 @@ const mongoose = require('mongoose')
 
 
 const doctorSchema = new mongoose.Schema({
-    
+    value: {
+        type: String,
+        required: true,
+        
+    },
+    label:{
+        type: String,
+        required: true,
+       
+    },
     doctorname:{
         type: String,
         required: true,
