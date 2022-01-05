@@ -16,7 +16,9 @@ app.use(fileUpload({
 }))
 
 // Routes
-//app.use('/user', require('./routes/userRouter'))
+app.use('/api', require('./routes/departmentRouter'))
+app.use('/api', require('./routes/doctorRouter'))
+app.use('/api', require('./routes/patientRouter'))
 
 
 
