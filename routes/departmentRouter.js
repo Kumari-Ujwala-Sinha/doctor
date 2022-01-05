@@ -1,11 +1,11 @@
 const router = require('express').Router()
-const doctorCtrl = require('../controllers/doctorCtrl')
+const departmentCtrl = require('../controllers/departmentCtrl')
 
 
 
-router.route('/doctor')
-    .get(doctorCtrl.getdoctors)
-    .post(doctorCtrl.createdoctor)
+router.route('/department')
+    .get(departmentCtrl.getDepartments)
+    .post(departmentCtrl.createDepartment)
     
 
 module.exports = router
