@@ -32,6 +32,18 @@ const patientSchema = new mongoose.Schema({
     slot:{
         type:String
     },
+    doctorname:{
+        type:String
+    },
+      departmentname:{
+        type:String
+      },
+      gender:{
+        type:String
+      },
+      email:{
+        type:String
+      },
     date:{
         type:String
     }
