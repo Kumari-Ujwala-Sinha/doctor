@@ -14,6 +14,7 @@ const contactmail =async (req, res, next) => {
     });
      
     const {
+      phone,
       name,
       subject,
       mailbody,
@@ -27,6 +28,7 @@ const contactmail =async (req, res, next) => {
       <h2 style="text-align: center; text-transform: uppercase;color: teal;">contact</h2>
       <div><div style="font-size: 14px margin">
       <div style="padding : 4px 0px 0px 0px"><h3> Name: </h3>${name}</div>
+      <div style="padding : 4px 0px 0px 0px"><h3>Phone</h3>${phone}</div>
      
       <div style="padding : 4px 0px 0px 0px"><h3>Email </h3>${email}</div>
       <div style="padding : 4px 0px 0px 0px"><h3>Subject</h3>${subject}</div>
