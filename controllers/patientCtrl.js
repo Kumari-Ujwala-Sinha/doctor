@@ -20,12 +20,20 @@ const patientCtrl = {
     },
     getPatient:async(req, res) =>{
         try {
-            const patients = await Patient.find()
+            const patients = await Patient.find().sort({"createdAt": -1})
             res.json(patients)
         } catch (err) {
             return res.status(500).json({msg: err.message})
         }
     },
+    filterpatient:async(req, res) =>{
+        try {
+            const patients = await Patient.find({doctor:req.params.doctorid}).sort({"createdAt": -1})
+            res.json(patients)
+        } catch (err) {
+            return res.status(500).json({msg: err.message})
+        }
+    }
 
  
 }
