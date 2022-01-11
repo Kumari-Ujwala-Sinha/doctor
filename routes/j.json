@@ -1,0 +1,12 @@
+[{
+    "_id": {
+        "$oid": "61dc0cf5b24354b161f060f0"
+    },
+    "doctorname": "Dr. Eman Mohammed",
+    "label": "Dr. Eman Mohammed",
+    "value": "Dr. Eman Mohammed",
+    "department": ["61dc0c29b24354b161efe86a"],
+    "slots": ["12:00-12:30", "12:30-1:00", "1:00-1:30"],
+    "availslot":
+[{"dateav":"12-01-2022","availSloty":["12-12:30","12-12:30"]},{"dateav":"13-01-2022","availSloty":["12-12:30","12:12:30"]}]
+}]
