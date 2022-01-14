@@ -1,5 +1,5 @@
 const router = require('express').Router()
-const departmentarCtrl = require('../controllers/departmentarCtrl')
+const departmentarCtrl = require('../controllers/dapartmentarCtrl')
 
 
 
