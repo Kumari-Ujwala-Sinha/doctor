@@ -12,7 +12,7 @@ const patientCtrl = {
           const newPatient = new Patient({fileid,patientid,name, age, message, phone, branch, clinic, doctor,slot, date, department,doctorname,email,
             departmentname,gender})
           await newPatient.save()
-         res.json({msg:"patient successfully booked"})
+         res.json({msg:"patient successfully booked and mail sent with all details"})
  
          } catch (err) {
              return res.status(500).json({msg: err.message})
@@ -42,7 +42,7 @@ const patientCtrl = {
             
             const newPatient = new Patient({message, branch, clinic, doctor,slot, date,department,doctorname,departmentname,patientid,fileid,name, age,  phone,email,gender})
             await newPatient.save()
-            res.json({msg:"patient successfully booked"}) 
+            res.json({msg:`patient successfully booked and mail sent with all details`}) 
         } catch (err) {
              return res.status(500).json({msg: err.message})
          }

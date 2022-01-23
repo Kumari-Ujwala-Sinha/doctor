@@ -37,7 +37,7 @@ const usermail =async (req, res, next) => {
       <h2 style="text-align: center; text-transform: uppercase;color: teal;">Welcome to the AL-OSRAH INTERNATIONAL HOSPITAL</h2>
       <div><div style="font-size: 14px margin">
       <div style="padding : 4px 0px 0px 0px"><h3> Name: </h3>${name}</div>
-      <div style="padding : 4px 0px 0px 0px"><h3> Fileid: </h3>${fileid}</div>
+      <div style="padding : 4px 0px 0px 0px"><h3> File Number: </h3>${fileid}</div>
       <div style="padding : 4px 0px 0px 0px"><h3> Patient Id: </h3>${patientid}</div>
       <div style="padding : 4px 0px 0px 0px"><h3>Age: </h3>${age}</div>
       <div style="padding : 4px 0px 0px 0px"><h3 >Phone:</h3>${phone}</div>
