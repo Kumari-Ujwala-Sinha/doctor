@@ -17,6 +17,7 @@ app.use(fileUpload({
 
 // Routes
 app.use('/api', require('./routes/departmentRouter'))
+app.use('/api', require('./routes/counterRouter'))
 app.use('/api', require('./routes/doctorRouter'))
 app.use('/api', require('./routes/departmentarRouter'))
 app.use('/api', require('./routes/doctorarRouter'))

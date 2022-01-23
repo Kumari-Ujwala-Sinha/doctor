@@ -3,7 +3,7 @@ const express = require("express");
 
 const nodemailer = require("nodemailer");
 
-const usermail =async (req, res, next) => {
+const oldpatientmail =async (req, res, next) => {
   try{
     var transporter = nodemailer.createTransport({
       service: "gmail",
@@ -16,19 +16,16 @@ const usermail =async (req, res, next) => {
     const {date,
       doctorname,
       departmentname,
-      gender,
+   
       slot,
-      name,
-      age,
+      
       message,
-      phone,
+      
       department: selectedDept,
       doctor: selectedDoc,
-      email} = req.body;
+      } = req.body;
 
-     let fileid=`#File${req.counter.seq}`
-     let patientid=req.secretcode
-
+      const  {patientid,fileid,name, age,  phone,email,gender} =req.patient
     var mailOptions = {
       from: "osrahhospital@gmail.com",
       to: [`${email} osrahhospital@gmail.com`],
@@ -69,4 +66,4 @@ const usermail =async (req, res, next) => {
   };
 
 
-module.exports = usermail;
+module.exports = oldpatientmail;

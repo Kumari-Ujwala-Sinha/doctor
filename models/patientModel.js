@@ -41,6 +41,12 @@ const patientSchema = new mongoose.Schema({
       gender:{
         type:String
       },
+      fileid:{
+        type:String
+      },
+      patientid:{
+        type:String
+      },
       email:{
         type:String
       },
