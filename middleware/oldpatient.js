@@ -4,7 +4,7 @@ const oldpatient = (req, res, next) => {
     try {
         Patient.findOne({fileid:req.body.fileid,patientid:req.body.patientid}, function(error, patient)   {
             if(error)
-                return next(error);
+                return res.status(500).json({msg: "This file number or patientid not exist"})
            req.patient=patient
           
             next();})
