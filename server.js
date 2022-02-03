@@ -23,6 +23,7 @@ app.use('/api', require('./routes/departmentarRouter'))
 app.use('/api', require('./routes/doctorarRouter'))
 app.use('/api', require('./routes/patientRouter'))
 app.use('/api', require('./routes/contactRouter'))
+app.use('/api', require('./routes/doctorcategoryRouter'))
 
 
 

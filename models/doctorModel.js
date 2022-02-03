@@ -26,6 +26,9 @@ const doctorSchema = new mongoose.Schema({
     },
     availslot:{
         type:Array
+    },
+    categoryname:{
+        type:String
     }
 }, {
     timestamps: true

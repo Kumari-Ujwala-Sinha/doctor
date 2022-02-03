@@ -15,6 +15,9 @@ router.route('/oldpatient')
     .post(oldpatient,oldpatientmail,  patientCtrl.bookoldpatient)
     
 router.route('/patient/:doctorid')
-    .get(patientCtrl.filterpatient)    
+    .get(patientCtrl.filterpatient)
+
+router.route('/patient/doctor/:id')
+    .get(patientCtrl.findpatientbydoctor)    
 
 module.exports = router
